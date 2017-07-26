@@ -31161,7 +31161,7 @@
 	  _createClass(Island, [{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      this.timer = setInterval(this.tick, 2500);
+	      this.timer = setInterval(this.tick, 4000);
 	    }
 	  }, {
 	    key: 'componentWillUnmount',

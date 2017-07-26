@@ -17,7 +17,7 @@ class Island extends Component {
   }
 
   componentDidMount() {
-    this.timer = setInterval(this.tick, 2500);
+    this.timer = setInterval(this.tick, 4000);
   }
 
   componentWillUnmount() {
