@@ -31229,15 +31229,19 @@
 	                  null,
 	                  _react2.default.createElement(
 	                    'div',
-	                    { className: 'row' },
+	                    { className: 'row', style: { 'marginTop': '10%' } },
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-3' },
-	                      '\u6700\u591A\u91D1\u9322\u5C0F\u968A'
+	                      _react2.default.createElement(
+	                        'b',
+	                        null,
+	                        '\u6700\u591A\u91D1\u9322\u5C0F\u968A'
+	                      )
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',
-	                      { className: 'col-3' },
+	                      { className: 'col-3', style: { 'textAlign': 'center' } },
 	                      '\u7B2C',
 	                      maxMoneyTeam,
 	                      '\u5C0F\u968A'
@@ -31256,15 +31260,19 @@
 	                  ),
 	                  _react2.default.createElement(
 	                    'div',
-	                    { className: 'row' },
+	                    { className: 'row', style: { 'marginTop': '10%' } },
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-3' },
-	                      '\u6700\u591A\u91D1\u9322\u7D44\u5225'
+	                      _react2.default.createElement(
+	                        'b',
+	                        null,
+	                        '\u6700\u591A\u91D1\u9322\u7D44\u5225'
+	                      )
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',
-	                      { className: 'col-4' },
+	                      { className: 'col-4', style: { 'textAlign': 'center' } },
 	                      maxMoneyPlayer,
 	                      '\u5C0F\u7D44'
 	                    ),
@@ -31319,7 +31327,7 @@
 	                    { className: 'row' },
 	                    _react2.default.createElement(
 	                      'div',
-	                      { className: 'col-4' },
+	                      { className: 'col-4', style: { 'textAlign': 'center' } },
 	                      _react2.default.createElement(
 	                        'b',
 	                        null,
@@ -31328,7 +31336,7 @@
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',
-	                      { className: 'col-4' },
+	                      { className: 'col-4', style: { 'textAlign': 'center' } },
 	                      _react2.default.createElement(
 	                        'b',
 	                        null,
@@ -31337,7 +31345,7 @@
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',
-	                      { className: 'col-4' },
+	                      { className: 'col-4', style: { 'textAlign': 'center' } },
 	                      _react2.default.createElement(
 	                        'b',
 	                        null,
@@ -31357,7 +31365,7 @@
 	                        maxKillTeam.slice(0, 10).map(function (item, key) {
 	                          return _react2.default.createElement(
 	                            'div',
-	                            { className: 'col-12' },
+	                            { className: 'col-12', style: { 'textAlign': 'center' } },
 	                            item
 	                          );
 	                        })
@@ -31372,7 +31380,7 @@
 	                        maxHeadTeam.slice(0, 10).map(function (item, key) {
 	                          return _react2.default.createElement(
 	                            'div',
-	                            { className: 'col-12' },
+	                            { className: 'col-12', style: { 'textAlign': 'center' } },
 	                            item
 	                          );
 	                        })
@@ -31387,7 +31395,7 @@
 	                        maxDeathTeam.slice(0, 10).map(function (item, key) {
 	                          return _react2.default.createElement(
 	                            'div',
-	                            { className: 'col-12' },
+	                            { className: 'col-12', style: { 'textAlign': 'center' } },
 	                            item
 	                          );
 	                        })
@@ -31414,32 +31422,56 @@
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-2' },
-	                      '1\u5C0F'
+	                      _react2.default.createElement(
+	                        'b',
+	                        null,
+	                        '1\u5C0F'
+	                      )
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-2' },
-	                      '2\u5C0F'
+	                      _react2.default.createElement(
+	                        'b',
+	                        null,
+	                        '2\u5C0F'
+	                      )
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-2' },
-	                      '3\u5C0F'
+	                      _react2.default.createElement(
+	                        'b',
+	                        null,
+	                        '3\u5C0F'
+	                      )
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-2' },
-	                      '4\u5C0F'
+	                      _react2.default.createElement(
+	                        'b',
+	                        null,
+	                        '4\u5C0F'
+	                      )
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-2' },
-	                      '5\u5C0F'
+	                      _react2.default.createElement(
+	                        'b',
+	                        null,
+	                        '5\u5C0F'
+	                      )
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-2' },
-	                      '6\u5C0F'
+	                      _react2.default.createElement(
+	                        'b',
+	                        null,
+	                        '6\u5C0F'
+	                      )
 	                    )
 	                  ),
 	                  _react2.default.createElement(
@@ -31484,36 +31516,60 @@
 	                  ),
 	                  _react2.default.createElement(
 	                    'div',
-	                    { className: 'row' },
+	                    { className: 'row', style: { 'marginTop': '10%' } },
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-2' },
-	                      '7\u5C0F'
+	                      _react2.default.createElement(
+	                        'b',
+	                        null,
+	                        '7\u5C0F'
+	                      )
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-2' },
-	                      '8\u5C0F'
+	                      _react2.default.createElement(
+	                        'b',
+	                        null,
+	                        '8\u5C0F'
+	                      )
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-2' },
-	                      '9\u5C0F'
+	                      _react2.default.createElement(
+	                        'b',
+	                        null,
+	                        '9\u5C0F'
+	                      )
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-2' },
-	                      '10\u5C0F'
+	                      _react2.default.createElement(
+	                        'b',
+	                        null,
+	                        '10\u5C0F'
+	                      )
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-2' },
-	                      '11\u5C0F'
+	                      _react2.default.createElement(
+	                        'b',
+	                        null,
+	                        '11\u5C0F'
+	                      )
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-2' },
-	                      '12\u5C0F'
+	                      _react2.default.createElement(
+	                        'b',
+	                        null,
+	                        '12\u5C0F'
+	                      )
 	                    )
 	                  ),
 	                  _react2.default.createElement(
@@ -31558,16 +31614,24 @@
 	                  ),
 	                  _react2.default.createElement(
 	                    'div',
-	                    { className: 'row' },
+	                    { className: 'row', style: { 'marginTop': '10%' } },
 	                    _react2.default.createElement(
 	                      'div',
-	                      { className: 'col-6' },
-	                      '\u8655\u5211\u5012\u6578\u6642\u9593'
+	                      { className: 'col-6', style: { 'textAlign': 'right' } },
+	                      _react2.default.createElement(
+	                        'b',
+	                        null,
+	                        '\u8655\u5211\u5012\u6578\u6642\u9593'
+	                      )
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-6' },
-	                      countdownShow
+	                      _react2.default.createElement(
+	                        'b',
+	                        null,
+	                        countdownShow
+	                      )
 	                    )
 	                  )
 	                )
@@ -31579,11 +31643,15 @@
 	                  null,
 	                  _react2.default.createElement(
 	                    'div',
-	                    { className: 'row' },
+	                    { className: 'row', style: { 'marginTop': '10%', 'textAlign': 'center' } },
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-6' },
-	                      '\u63A9\u57CB\u5834\u7AF6\u6280\u5834'
+	                      _react2.default.createElement(
+	                        'b',
+	                        null,
+	                        '\u63A9\u57CB\u5834\u7AF6\u6280\u5834'
+	                      )
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',
@@ -31593,11 +31661,15 @@
 	                  ),
 	                  _react2.default.createElement(
 	                    'div',
-	                    { className: 'row' },
+	                    { className: 'row', style: { 'marginTop': '10%', 'textAlign': 'center' } },
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-6' },
-	                      '\u5893\u5712\u7AF6\u6280\u5834'
+	                      _react2.default.createElement(
+	                        'b',
+	                        null,
+	                        '\u5893\u5712\u7AF6\u6280\u5834'
+	                      )
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',
@@ -31607,11 +31679,15 @@
 	                  ),
 	                  _react2.default.createElement(
 	                    'div',
-	                    { className: 'row' },
+	                    { className: 'row', style: { 'marginTop': '10%', 'textAlign': 'center' } },
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-6' },
-	                      '\u5CA9\u7A9F\u7AF6\u6280\u5834'
+	                      _react2.default.createElement(
+	                        'b',
+	                        null,
+	                        '\u5CA9\u7A9F\u7AF6\u6280\u5834'
+	                      )
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',

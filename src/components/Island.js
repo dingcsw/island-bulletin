@@ -62,15 +62,15 @@ class Island extends Component {
 
           return (
             <div>
-              <div className="row">
-                <div className="col-3">最多金錢小隊</div>
-                <div className="col-3">第{maxMoneyTeam}小隊</div>
+              <div className="row" style={{'marginTop': '10%'}}>
+                <div className="col-3"><b>最多金錢小隊</b></div>
+                <div className="col-3" style={{'textAlign': 'center'}}>第{maxMoneyTeam}小隊</div>
                 <div className="col-3">{teamNames[maxMoneyTeam - 1]}</div>
                 <div className="col-3">{maxMoneyByTeam}元</div>
               </div> 
-              <div className="row">
-                <div className="col-3">最多金錢組別</div>
-                <div className="col-4">{maxMoneyPlayer}小組</div>
+              <div className="row" style={{'marginTop': '10%'}}>
+                <div className="col-3"><b>最多金錢組別</b></div>
+                <div className="col-4" style={{'textAlign': 'center'}}>{maxMoneyPlayer}小組</div>
                 <div className="col-5">{maxMoneyByPlayer}元</div>
               </div> 
             </div>
@@ -102,15 +102,15 @@ class Island extends Component {
           return (
             <div>
               <div className="row">
-                <div className="col-4"><b>殺敵最多</b></div>
-                <div className="col-4"><b>收頭最多</b></div>
-                <div className="col-4"><b>被殺最多</b></div>
+                <div className="col-4" style={{'textAlign': 'center'}}><b>殺敵最多</b></div>
+                <div className="col-4" style={{'textAlign': 'center'}}><b>收頭最多</b></div>
+                <div className="col-4" style={{'textAlign': 'center'}}><b>被殺最多</b></div>
               </div> 
               <div className="row">
                 <div className="col-4">
                   <div className="row">{
                   maxKillTeam.slice(0, 10).map((item, key) => 
-                    <div className="col-12">
+                    <div className="col-12" style={{'textAlign': 'center'}}>
                       {item}
                     </div>
                   )
@@ -118,7 +118,7 @@ class Island extends Component {
                 <div className="col-4">
                   <div className="row">{
                     maxHeadTeam.slice(0, 10).map((item, key) => 
-                      <div className="col-12">
+                      <div className="col-12" style={{'textAlign': 'center'}}>
                         {item}
                       </div>
                     )
@@ -126,7 +126,7 @@ class Island extends Component {
                 <div className="col-4">
                   <div className="row">{
                     maxDeathTeam.slice(0, 10).map((item, key) => 
-                      <div className="col-12">
+                      <div className="col-12" style={{'textAlign': 'center'}}>
                         {item}
                       </div>
                     )
@@ -146,12 +146,12 @@ class Island extends Component {
           return (
             <div>
               <div className="row">
-                <div className="col-2">1小</div>
-                <div className="col-2">2小</div>
-                <div className="col-2">3小</div>
-                <div className="col-2">4小</div>
-                <div className="col-2">5小</div>
-                <div className="col-2">6小</div>
+                <div className="col-2"><b>1小</b></div>
+                <div className="col-2"><b>2小</b></div>
+                <div className="col-2"><b>3小</b></div>
+                <div className="col-2"><b>4小</b></div>
+                <div className="col-2"><b>5小</b></div>
+                <div className="col-2"><b>6小</b></div>
               </div> 
               <div className="row">
                 <div className="col-2">{inJailCount[0]}組</div>
@@ -161,13 +161,13 @@ class Island extends Component {
                 <div className="col-2">{inJailCount[4]}組</div>
                 <div className="col-2">{inJailCount[5]}組</div>
               </div> 
-              <div className="row">
-                <div className="col-2">7小</div>
-                <div className="col-2">8小</div>
-                <div className="col-2">9小</div>
-                <div className="col-2">10小</div>
-                <div className="col-2">11小</div>
-                <div className="col-2">12小</div>
+              <div className="row" style={{'marginTop': '10%'}}>
+                <div className="col-2"><b>7小</b></div>
+                <div className="col-2"><b>8小</b></div>
+                <div className="col-2"><b>9小</b></div>
+                <div className="col-2"><b>10小</b></div>
+                <div className="col-2"><b>11小</b></div>
+                <div className="col-2"><b>12小</b></div>
               </div> 
               <div className="row">
                 <div className="col-2">{inJailCount[6]}組</div>
@@ -177,24 +177,24 @@ class Island extends Component {
                 <div className="col-2">{inJailCount[10]}組</div>
                 <div className="col-2">{inJailCount[11]}組</div>
               </div> 
-              <div className="row">
-                <div className="col-6">處刑倒數時間</div>
-                <div className="col-6">{countdownShow}</div>
+              <div className="row" style={{'marginTop': '10%'}}>
+                <div className="col-6" style={{'textAlign': 'right'}}><b>處刑倒數時間</b></div>
+                <div className="col-6"><b>{countdownShow}</b></div>
               </div> 
             </div>
           );
         case 3: return (
             <div>
-              <div className="row">
-                <div className="col-6">掩埋場競技場</div>
+              <div className="row" style={{'marginTop': '10%', 'textAlign': 'center'}}>
+                <div className="col-6"><b>掩埋場競技場</b></div>
                 <div className="col-6">{this.props.arenas['1']['team']}</div>
               </div> 
-              <div className="row">
-                <div className="col-6">墓園競技場</div>
+              <div className="row" style={{'marginTop': '10%', 'textAlign': 'center'}}>
+                <div className="col-6"><b>墓園競技場</b></div>
                 <div className="col-6">{this.props.arenas['2']['team']}</div>
               </div> 
-              <div className="row">
-                <div className="col-6">岩窟競技場</div>
+              <div className="row" style={{'marginTop': '10%', 'textAlign': 'center'}}>
+                <div className="col-6"><b>岩窟競技場</b></div>
                 <div className="col-6">{this.props.arenas['3']['team']}</div>
               </div> 
             </div>
