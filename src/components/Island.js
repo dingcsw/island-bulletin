@@ -17,7 +17,7 @@ class Island extends Component {
   }
 
   componentDidMount() {
-    this.timer = setInterval(this.tick, 2000);
+    this.timer = setInterval(this.tick, 2500);
   }
 
   componentWillUnmount() {
@@ -101,15 +101,15 @@ class Island extends Component {
           
           return (
             <div>
-              <div className="row">
-                <div className="col-4" style={{'textAlign': 'center'}}><b>殺敵最多</b></div>
-                <div className="col-4" style={{'textAlign': 'center'}}><b>收頭最多</b></div>
-                <div className="col-4" style={{'textAlign': 'center'}}><b>被殺最多</b></div>
+              <div className="row" style={{'marginTop': '2.5%'}}>
+                <div className="col-4" style={{'marginTop': '10%','textAlign': 'center'}}><b>殺敵最多</b></div>
+                <div className="col-4" style={{'marginTop': '10%','textAlign': 'center'}}><b>收頭最多</b></div>
+                <div className="col-4" style={{'marginTop': '10%','textAlign': 'center'}}><b>被殺最多</b></div>
               </div> 
               <div className="row">
                 <div className="col-4">
                   <div className="row">{
-                  maxKillTeam.slice(0, 10).map((item, key) => 
+                  maxKillTeam.slice(0, 5).map((item, key) => 
                     <div className="col-12" style={{'textAlign': 'center'}}>
                       {item}
                     </div>
@@ -117,7 +117,7 @@ class Island extends Component {
                 }</div></div>
                 <div className="col-4">
                   <div className="row">{
-                    maxHeadTeam.slice(0, 10).map((item, key) => 
+                    maxHeadTeam.slice(0, 5).map((item, key) => 
                       <div className="col-12" style={{'textAlign': 'center'}}>
                         {item}
                       </div>
@@ -125,7 +125,7 @@ class Island extends Component {
                   }</div></div>
                 <div className="col-4">
                   <div className="row">{
-                    maxDeathTeam.slice(0, 10).map((item, key) => 
+                    maxDeathTeam.slice(0, 5).map((item, key) => 
                       <div className="col-12" style={{'textAlign': 'center'}}>
                         {item}
                       </div>
@@ -145,7 +145,7 @@ class Island extends Component {
           const countdownShow = String(Math.floor(countdown/60000)) + ':' + String(Math.floor((countdown % 60000)/1000));
           return (
             <div>
-              <div className="row">
+              <div className="row" style={{'marginTop': '2.5%'}}>
                 <div className="col-2"><b>1小</b></div>
                 <div className="col-2"><b>2小</b></div>
                 <div className="col-2"><b>3小</b></div>

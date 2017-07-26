@@ -31161,7 +31161,7 @@
 	  _createClass(Island, [{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      this.timer = setInterval(this.tick, 2000);
+	      this.timer = setInterval(this.tick, 2500);
 	    }
 	  }, {
 	    key: 'componentWillUnmount',
@@ -31324,10 +31324,10 @@
 	                  null,
 	                  _react2.default.createElement(
 	                    'div',
-	                    { className: 'row' },
+	                    { className: 'row', style: { 'marginTop': '2.5%' } },
 	                    _react2.default.createElement(
 	                      'div',
-	                      { className: 'col-4', style: { 'textAlign': 'center' } },
+	                      { className: 'col-4', style: { 'marginTop': '10%', 'textAlign': 'center' } },
 	                      _react2.default.createElement(
 	                        'b',
 	                        null,
@@ -31336,7 +31336,7 @@
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',
-	                      { className: 'col-4', style: { 'textAlign': 'center' } },
+	                      { className: 'col-4', style: { 'marginTop': '10%', 'textAlign': 'center' } },
 	                      _react2.default.createElement(
 	                        'b',
 	                        null,
@@ -31345,7 +31345,7 @@
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',
-	                      { className: 'col-4', style: { 'textAlign': 'center' } },
+	                      { className: 'col-4', style: { 'marginTop': '10%', 'textAlign': 'center' } },
 	                      _react2.default.createElement(
 	                        'b',
 	                        null,
@@ -31362,7 +31362,7 @@
 	                      _react2.default.createElement(
 	                        'div',
 	                        { className: 'row' },
-	                        maxKillTeam.slice(0, 10).map(function (item, key) {
+	                        maxKillTeam.slice(0, 5).map(function (item, key) {
 	                          return _react2.default.createElement(
 	                            'div',
 	                            { className: 'col-12', style: { 'textAlign': 'center' } },
@@ -31377,7 +31377,7 @@
 	                      _react2.default.createElement(
 	                        'div',
 	                        { className: 'row' },
-	                        maxHeadTeam.slice(0, 10).map(function (item, key) {
+	                        maxHeadTeam.slice(0, 5).map(function (item, key) {
 	                          return _react2.default.createElement(
 	                            'div',
 	                            { className: 'col-12', style: { 'textAlign': 'center' } },
@@ -31392,7 +31392,7 @@
 	                      _react2.default.createElement(
 	                        'div',
 	                        { className: 'row' },
-	                        maxDeathTeam.slice(0, 10).map(function (item, key) {
+	                        maxDeathTeam.slice(0, 5).map(function (item, key) {
 	                          return _react2.default.createElement(
 	                            'div',
 	                            { className: 'col-12', style: { 'textAlign': 'center' } },
@@ -31418,7 +31418,7 @@
 	                  null,
 	                  _react2.default.createElement(
 	                    'div',
-	                    { className: 'row' },
+	                    { className: 'row', style: { 'marginTop': '2.5%' } },
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-2' },
