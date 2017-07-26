@@ -11,13 +11,13 @@ class Island extends Component {
   constructor() {
     super();
     this.state = {
-      currentPage: 2
+      currentPage: 0
     }
     this.tick = this.tick.bind(this);
   }
 
   componentDidMount() {
-    this.timer = setInterval(this.tick, 5000);
+    this.timer = setInterval(this.tick, 2000);
   }
 
   componentWillUnmount() {
@@ -30,7 +30,7 @@ class Island extends Component {
 
   render() {
     const { currentPage } = this.state;
-
+    console.log(currentPage);
     const showTitle = (() => {
       switch (currentPage) {
         case 0: return '金錢排名';
@@ -65,7 +65,7 @@ class Island extends Component {
               <div className="row">
                 <div className="col-3">最多金錢小隊</div>
                 <div className="col-3">第{maxMoneyTeam}小隊</div>
-                <div className="col-3">{teamNames[maxMoneyTeam]}</div>
+                <div className="col-3">{teamNames[maxMoneyTeam - 1]}</div>
                 <div className="col-3">{maxMoneyByTeam}元</div>
               </div> 
               <div className="row">
@@ -102,14 +102,35 @@ class Island extends Component {
           return (
             <div>
               <div className="row">
-                <div className="col-4">殺敵最多</div>
-                <div className="col-4">收頭最多</div>
-                <div className="col-4">被殺最多</div>
+                <div className="col-4"><b>殺敵最多</b></div>
+                <div className="col-4"><b>收頭最多</b></div>
+                <div className="col-4"><b>被殺最多</b></div>
               </div> 
               <div className="row">
-                <div className="col-4">{maxKillTeam}小組</div>
-                <div className="col-4">{maxHeadTeam}小組</div>
-                <div className="col-4">{maxDeathTeam}小組</div>
+                <div className="col-4">
+                  <div className="row">{
+                  maxKillTeam.slice(0, 10).map((item, key) => 
+                    <div className="col-12">
+                      {item}
+                    </div>
+                  )
+                }</div></div>
+                <div className="col-4">
+                  <div className="row">{
+                    maxHeadTeam.slice(0, 10).map((item, key) => 
+                      <div className="col-12">
+                        {item}
+                      </div>
+                    )
+                  }</div></div>
+                <div className="col-4">
+                  <div className="row">{
+                    maxDeathTeam.slice(0, 10).map((item, key) => 
+                      <div className="col-12">
+                        {item}
+                      </div>
+                    )
+                }</div></div>
               </div> 
             </div>
           );
@@ -166,15 +187,15 @@ class Island extends Component {
             <div>
               <div className="row">
                 <div className="col-6">掩埋場競技場</div>
-                <div className="col-6">{this.props.garenas['g1']['team']}</div>
+                <div className="col-6">{this.props.arenas['1']['team']}</div>
               </div> 
               <div className="row">
                 <div className="col-6">墓園競技場</div>
-                <div className="col-6">{this.props.garenas['g2']['team']}</div>
+                <div className="col-6">{this.props.arenas['2']['team']}</div>
               </div> 
               <div className="row">
                 <div className="col-6">岩窟競技場</div>
-                <div className="col-6">{this.props.garenas['g3']['team']}</div>
+                <div className="col-6">{this.props.arenas['3']['team']}</div>
               </div> 
             </div>
           );;

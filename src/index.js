@@ -20,11 +20,11 @@ const db = firebase
   .ref();
 
 const modifyTeamData = (data, id) => db.child(`teams/${id}`).update(data, response => response);
-const modifyGarenaData = (data, id) => db.child(`garenas/${id}`).update(data, response => response);
+const modifyArenaData = (data, id) => db.child(`garenas/${id}`).update(data, response => response);
 const modifyEnvData = (data) => db.child(`env`).update(data, response => response);
 const actions = {
   modifyTeamData,
-  modifyGarenaData,
+  modifyArenaData,
   modifyEnvData
 };
 

@@ -86,7 +86,7 @@
 	    return response;
 	  });
 	};
-	var modifyGarenaData = function modifyGarenaData(data, id) {
+	var modifyArenaData = function modifyArenaData(data, id) {
 	  return db.child('garenas/' + id).update(data, function (response) {
 	    return response;
 	  });
@@ -98,7 +98,7 @@
 	};
 	var actions = {
 	  modifyTeamData: modifyTeamData,
-	  modifyGarenaData: modifyGarenaData,
+	  modifyArenaData: modifyArenaData,
 	  modifyEnvData: modifyEnvData
 	};
 
@@ -30799,7 +30799,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background-color: #577C8A;\n}\n\n.bulletin-title {\n  padding-top: 30px;\n  padding-bottom: 30px;\n  font-size: 50px;\n  font-weight: bold;\n  color: #FBE251;\n  text-align: center;\n}", ""]);
+	exports.push([module.id, "body {\n  background-color: #577C8A;\n  font-size: 250%;\n}\n\n.bulletin-title {\n  padding-top: 30px;\n  padding-bottom: 30px;\n  font-size: 150%;\n  font-weight: bold;\n  color: #FBE251;\n  text-align: center;\n}", ""]);
 
 	// exports
 
@@ -31152,7 +31152,7 @@
 	    var _this = _possibleConstructorReturn(this, (Island.__proto__ || Object.getPrototypeOf(Island)).call(this));
 
 	    _this.state = {
-	      currentPage: 2
+	      currentPage: 0
 	    };
 	    _this.tick = _this.tick.bind(_this);
 	    return _this;
@@ -31161,7 +31161,7 @@
 	  _createClass(Island, [{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      this.timer = setInterval(this.tick, 5000);
+	      this.timer = setInterval(this.tick, 2000);
 	    }
 	  }, {
 	    key: 'componentWillUnmount',
@@ -31180,7 +31180,7 @@
 
 	      var currentPage = this.state.currentPage;
 
-
+	      console.log(currentPage);
 	      var showTitle = function () {
 	        switch (currentPage) {
 	          case 0:
@@ -31245,7 +31245,7 @@
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-3' },
-	                      teamNames[maxMoneyTeam]
+	                      teamNames[maxMoneyTeam - 1]
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',
@@ -31320,17 +31320,29 @@
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-4' },
-	                      '\u6BBA\u6575\u6700\u591A'
+	                      _react2.default.createElement(
+	                        'b',
+	                        null,
+	                        '\u6BBA\u6575\u6700\u591A'
+	                      )
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-4' },
-	                      '\u6536\u982D\u6700\u591A'
+	                      _react2.default.createElement(
+	                        'b',
+	                        null,
+	                        '\u6536\u982D\u6700\u591A'
+	                      )
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-4' },
-	                      '\u88AB\u6BBA\u6700\u591A'
+	                      _react2.default.createElement(
+	                        'b',
+	                        null,
+	                        '\u88AB\u6BBA\u6700\u591A'
+	                      )
 	                    )
 	                  ),
 	                  _react2.default.createElement(
@@ -31339,20 +31351,47 @@
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-4' },
-	                      maxKillTeam,
-	                      '\u5C0F\u7D44'
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'row' },
+	                        maxKillTeam.slice(0, 10).map(function (item, key) {
+	                          return _react2.default.createElement(
+	                            'div',
+	                            { className: 'col-12' },
+	                            item
+	                          );
+	                        })
+	                      )
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-4' },
-	                      maxHeadTeam,
-	                      '\u5C0F\u7D44'
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'row' },
+	                        maxHeadTeam.slice(0, 10).map(function (item, key) {
+	                          return _react2.default.createElement(
+	                            'div',
+	                            { className: 'col-12' },
+	                            item
+	                          );
+	                        })
+	                      )
 	                    ),
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-4' },
-	                      maxDeathTeam,
-	                      '\u5C0F\u7D44'
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'row' },
+	                        maxDeathTeam.slice(0, 10).map(function (item, key) {
+	                          return _react2.default.createElement(
+	                            'div',
+	                            { className: 'col-12' },
+	                            item
+	                          );
+	                        })
+	                      )
 	                    )
 	                  )
 	                )
@@ -31549,7 +31588,7 @@
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-6' },
-	                      _this2.props.garenas['g1']['team']
+	                      _this2.props.arenas['1']['team']
 	                    )
 	                  ),
 	                  _react2.default.createElement(
@@ -31563,7 +31602,7 @@
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-6' },
-	                      _this2.props.garenas['g2']['team']
+	                      _this2.props.arenas['2']['team']
 	                    )
 	                  ),
 	                  _react2.default.createElement(
@@ -31577,7 +31616,7 @@
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'col-6' },
-	                      _this2.props.garenas['g3']['team']
+	                      _this2.props.arenas['3']['team']
 	                    )
 	                  )
 	                )
